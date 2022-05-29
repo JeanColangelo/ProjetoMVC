@@ -1,0 +1,22 @@
+unit UVendaModel;
+
+interface
+
+uses
+  System.SysUtils;
+
+type
+TVenda = class
+     private
+        FCodPedido: Integer;
+        FEmissao : TDate;
+        FCodCliente : Integer;
+        FTotal : Double;
+     public
+        property FCodPedido: Integer read FCodPedido write FCodPedido;
+
+     end;
+
+implementation
+
+end.

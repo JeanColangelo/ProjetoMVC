@@ -1,0 +1,5 @@
+object FrDmVenda: TFrDmVenda
+  OldCreateOrder = False
+  Height = 301
+  Width = 441
+end

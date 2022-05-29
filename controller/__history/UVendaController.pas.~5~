@@ -1,0 +1,24 @@
+unit UVendaController;
+
+interface
+
+uses
+  UVendaModel, UDmVenda;
+
+type
+  TPedidoController = class
+  public
+    function InserirPedido(oPedido : TPedido; out sErro: string): Boolean;
+  end;
+
+implementation
+
+{ TVendaController }
+
+function TPedidoController.InserirPedido(oPedido: TPedido;
+  out sErro: string): Boolean;
+begin
+  Result := FrDmVenda.InserirPedido(oPedido, sErro);
+end;
+
+end.

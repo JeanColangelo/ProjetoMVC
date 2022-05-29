@@ -1,0 +1,14 @@
+object FrDmCliente: TFrDmCliente
+  OldCreateOrder = False
+  Height = 297
+  Width = 424
+  object QCliente: TFDQuery
+    Connection = FrDmConexao.FDConexao
+    Left = 32
+    Top = 24
+  end
+  object DataSource1: TDataSource
+    Left = 32
+    Top = 80
+  end
+end

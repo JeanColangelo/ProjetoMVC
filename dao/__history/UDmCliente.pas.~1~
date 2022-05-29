@@ -1,0 +1,25 @@
+unit UDmCliente;
+
+interface
+
+uses
+  System.SysUtils, System.Classes;
+
+type
+  TFrDmCliente = class(TDataModule)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrDmCliente: TFrDmCliente;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,5 @@
+object FrDmCliente: TFrDmCliente
+  OldCreateOrder = False
+  Height = 297
+  Width = 424
+end

@@ -1,0 +1,16 @@
+unit UVendaController;
+
+interface
+
+uses
+  UVendaModel;
+
+type
+  TVendaController = class
+  public
+    function InserirPedido(oPedido : TPedido; out sErro: string): Boolean;
+  end;
+
+implementation
+
+end.

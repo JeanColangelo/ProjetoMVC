@@ -1,0 +1,33 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 333
+  Width = 527
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'Database=mvcdelphi'
+      'User_Name=root'
+      'DriverID=MySQL')
+    LoginPrompt = False
+    Left = 280
+    Top = 56
+  end
+  object FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink
+    VendorLib = 
+      'C:\Users\jean_\OneDrive\TCC - ETEC\Arquivos\Sistemas Xe10\TesteM' +
+      'VC\libmysql.dll'
+    Left = 128
+    Top = 56
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'Forms'
+    Left = 128
+    Top = 144
+  end
+  object QCliente: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      'Select * from clientes')
+    Left = 288
+    Top = 136
+  end
+end
